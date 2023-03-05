@@ -1,0 +1,84 @@
+/* -----------------------------------------------------------
+                         HOME
+----------------------------------------------------------- */
+.hero {
+    background-image: url('/image/laptop.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232931af;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #EEEEEE;
+    padding-top: 200px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .hero-content .my-btn{
+        background: #4ECCA3;
+        color: #393E46;
+  }
+  .btn-primary {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+  
+
+
+  
+  .typing-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  
+  .typing-text {
+    color: #4ECCA3;
+  }
+  
+  .typing-text::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .typing-container {
+      font-size: 1.5rem;
+    }
+  }
