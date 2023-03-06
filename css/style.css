@@ -37,17 +37,10 @@
     margin-bottom: 50px;
   }
   .hero-content .my-btn{
-        background: #4ECCA3;
-        color: #393E46;
+        background: #EEEEEE;
+        color: #232931;
   }
-  .btn-primary {
-    font-size: 20px;
-    padding: 15px 30px;
-  }
-  
 
-
-  
   .typing-container {
     width: 100%;
     text-align: center;
@@ -81,4 +74,48 @@
     .typing-container {
       font-size: 1.5rem;
     }
+  }
+
+
+  #skills {
+    background-color: #393E46;
+    padding: 50px 0;
+    
+  }
+  .heading{
+   border:6px solid #4ECCA3;
+    padding: 20px;
+    color: #EEEEEE;
+    margin: 20px 20px 50px 20px;
+  }
+  
+  .logo-img{
+    height: 95px;
+    margin: 40px 0px;
+    transition: transform 0.3s ease;
+ 
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 8px #4ECCA3);
+  }
+#about{
+  padding: 50px 0;
+}
+
+  #about .about-contant{
+    color: #393E46;
+    margin-top: 50px;
+  }
+  #about .about-contant h2{
+    color: #4ECCA3;
+    font-size:40px;
+    margin-bottom: 30px;
+    text-decoration: underline 2px;
+  }
+  #about img{
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
   }
