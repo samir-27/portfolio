@@ -1,4 +1,11 @@
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+
 /* -----------------------------------------------------------
+
                          HOME
 ----------------------------------------------------------- */
 .hero {
@@ -100,7 +107,7 @@
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 8px #4ECCA3);
   }
-#about{
+#about,#project{
   padding: 50px 0;
 }
 
@@ -112,10 +119,25 @@
     color: #4ECCA3;
     font-size:40px;
     margin-bottom: 30px;
-    text-decoration: underline 2px;
+   
   }
   #about img{
     width: 300px;
     border-radius: 10px;
     margin: 20px;
   }
+
+ 
+
+
+
+.image-card ,.card-body{
+  max-width: fit-content;
+  padding: 0px;
+  color: #EEEEEE;
+  background-color: #393E46;
+}
+.card:hover{
+  transform: scale(0.95);
+  filter: drop-shadow(0px 0px 8px #4ECCA3);
+}
