@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alfa+Slab+One&family=Michroma&display=swap');
+
+html,
+body {
+  background: #00dba1;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: 'Michroma', sans-serif;
+}
+
+.bg-black {
+  background-color: #1e2b2e;
+}
+
+/* ******************************************************************************************************
+                                          HOME
+************************************************************************************************** */
+.home {
+  display: flex;
+  /* margin-top: 52px; */
+  /* background-image: url(/img/hero-bg.png); */
+  height: 100vh;
+  width: 100vw;
+  background-color: #2c33333d;
+  color: #E7F6F2;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.box-1 h1 {
+  font-size: 40px;
+  padding: 0 50px 0 0;
+  background: #A5C9CA;
+}
+
+.box-1 p {
+  margin-bottom: 50px;
+
+}
+
+.btn-1 {
+  cursor: pointer;
+  border: 1px solid #E7F6F2;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: #E7F6F2;
+  border: #395B64;
+  font-size: 1.5em;
+  box-shadow: 0 0px 6px #E7F6F2;
+}
+
+/*******************************************************************************
+                                  OVERLAY
+**********************************************************************************/
+
+.overlay {
+
+  min-height: 100%;
+  background: url(/img/hero-bg.png) #395B64;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+/*******************************************************************************
+SERVICES
+**********************************************************************************/
+.overlay-1 {
+  box-shadow: 0 0 50px #1e2b2e;
+  color: #E7F6F2;
+  height: 80%;
+  padding: 10px;
+  border: 5px solid #E7F6F2;
+  background: url(/img/project.jpeg) #000000;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************************
+                                     PROJECT
+*************************************************************************************************/
+.col-lg-6 img {
+  margin: 50px 10px 0 0;
+
+  border: 3px solid #A5C9CA;
+  border-radius: 10px;
+  box-shadow: 0 0 0px #E7F6F2;
+}
+
+.col-lg-6 h2 {
+  background-color: #A5C9CA;
+}
+
+.project {
+  background-color: #E7F6F2;
+  color: #1e2b2e;
+}
+
+/******************************************************************************************************
+                                     HEADING
+**************************************************************************************************/
+.heading,
+.copyright {
+  background-color: #A5C9CA;
+  color: #1e2b2e;
+  margin: 0 20px;
+  /* padding: 50px; */
+  /* margin: 60px 0 20px 0; */
+}
+
+.heading,
+.copyright {
+  background-color: #A5C9CA;
+  color: #1e2b2e;
+
+  /* padding: 50px; */
+  /* margin: 60px 0 20px 0; */
+}
+
+/******************************************************************************************************
+                                      ABOUT
+**************************************************************************************************/
+.btn-primary {
+  color: #1e2b2e;
+  background-color: #A5C9CA;
+  border-style: none;
+  border-radius: 6px;
+}
+
+/******************************************************************************************************
+                                      CONTACT
+**************************************************************************************************/
+.contact {
+  background: #E7F6F2;
+  align-items: center;
+}
+
+.contact-item {
+
+  padding: 10px 0px 10px 50px;
+  background: white;
+  border: 5px solid #E7F6F2;
+  box-shadow: 0 0 10px #1e2b2e;
+}
