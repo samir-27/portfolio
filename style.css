@@ -6,6 +6,7 @@
 html,
 body {
   background: #00dba1;
+  overflow-x: hidden;
 }
 
 p {
@@ -65,15 +66,25 @@ a {
 
 .btn-1 {
   cursor: pointer;
-  border: 1px solid #E7F6F2;
   background-color: transparent;
   height: 50px;
   width: 200px;
   color: #E7F6F2;
-  border: #395B64;
+  border: 1px solid #E7F6F2;
   font-size: 1.5em;
-  box-shadow: 0 0px 6px #E7F6F2;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transitions for animation */
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px; /* Add perspective for 3D effect */
 }
+
+.btn-1:hover {
+  transform: scale(1.05) rotateX(5deg); /* Apply 3D scale and rotation on hover */
+  box-shadow: 0 0 10px rgba(231, 246, 242, 0.5); /* Add shadow on hover */
+}
+
+
+
 
 /*******************************************************************************
                                   OVERLAY
@@ -88,7 +99,7 @@ a {
 }
 
 /*******************************************************************************
-SERVICES
+                                  SERVICES
 **********************************************************************************/
 .overlay-1 {
   box-shadow: 0 0 50px #1e2b2e;
@@ -99,10 +110,16 @@ SERVICES
   background: url(/img/project.jpeg) #000000;
   background-size: cover;
   background-blend-mode: multiply;
-
+}
+.overlay-zoom {
+  /* Other overlay styles... */
+  transition: background-size 0.5s ease; /* Add transition for smooth zoom effect */
+  background-size: 100%; /* Initial background size */
 }
 
-
+.overlay-zoom:hover {
+  background-size: 120%; /* Increase background size (zoom in) on hover */
+}
 
 
 /******************************************************************************************************
@@ -123,6 +140,14 @@ SERVICES
 .project {
   background-color: #E7F6F2;
   color: #1e2b2e;
+}
+@media (min-width: 992px) {
+  .row:nth-child(odd) .col-lg-6:first-child {
+    order: 2; /* Change the order of the first column in odd rows */
+  }
+  .row:nth-child(odd) .col-lg-6:last-child {
+    order: 1; /* Change the order of the last column in odd rows */
+  }
 }
 
 /******************************************************************************************************
@@ -149,11 +174,45 @@ SERVICES
 /******************************************************************************************************
                                       ABOUT
 **************************************************************************************************/
-.btn-primary {
-  color: #1e2b2e;
-  background-color: #A5C9CA;
-  border-style: none;
-  border-radius: 6px;
+.about-img {
+  box-shadow:hwb(from  h w b);
+}
+.custom-button {
+  background-color: #79c3c6;;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.8s, opacity 0.9s;
+}
+
+.custom-button:hover {
+  transform: scale(1.2);
+}
+
+.custom-button::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transform: skewX(-45deg);
+  transition: left 0.6s;
+  z-index: -1;
+}
+
+.custom-button:hover::before {
+  left: 100%;
+}
+
+.custom-button span {
+  position: relative;
+  z-index: 1;
 }
 
 /******************************************************************************************************
@@ -165,7 +224,6 @@ SERVICES
 }
 
 .contact-item {
-
   padding: 10px 0px 10px 50px;
   background: white;
   border: 5px solid #E7F6F2;
